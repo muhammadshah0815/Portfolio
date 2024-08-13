@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px; /* Adjusted to move the profile image further up */
+}
+
+.profile-image {
+    width: 250px; /* Increased size */
+    height: 250px; /* Increased size */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.urdu-name {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.5em;
+    margin: 0;
+    color: #555;
+}
+
+h2, h3 {
+    font-family: 'DM Serif Display', serif;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.buttons button:hover {
+    background: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Urdu font style for a cultural touch */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+
+.urdu-text {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.2em;
+    color: #555;
+}
