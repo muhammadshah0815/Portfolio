@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll-polyfill/0.4.4/smoothscroll.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <img src="images/portfolio-profile-image.jpeg" alt="Your Image" class="profile-image">
+            <h1>Muhammad Ali Shah</h1>
+            <h2 class="urdu-name">محمد علی شاہ</h2>
+            <p class="tagline">Junior at Duke University studying CS & Stats hoping to transform society with technology</p> <!-- Changed to p tag -->
+            <div class="buttons">
+                <a href="https://drive.google.com/file/d/1U5Vh3-FF70l26gHytRPwT-Z2fgD9ThO5/view?usp=sharing" target="_blank" style="text-decoration: none;">
+                    <button>Resume</button>
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:muhammad.shah@duke.edu"><img src="https://www.iconsdb.com/icons/preview/gray/mail-xxl.png" alt="Email"></a>
+                <a href="https://www.linkedin.com/in/muhammadshah18012"><img src="images/icons8-linkedin-48.png" alt="LinkedIn"></a>
+                <a href="https://github.com/muhammadshah0815"><img src="images/icons8-github-48.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="experience">
+        <h2 class="experience-headline">Experience</h2>
+        <div class="experience-container">
+            <div class="experience-box">
+                <h3>10Pearls - Software Engineering Intern</h3>
+                <img src="images/10Pearls-logo.jpeg" alt="Company Logo" class="company-logo tenpearls-logo">
+                <p class="experience-details"><em>June 2024 – August 2024 | New York, NY</em></p>
+                <ul>
+                    <li>Developed a voice agent for enterprise customer service, reducing average handling times and improving user experience by integrating Dialogflow CX for dynamic, AI-driven interactions.</li>
+                    <li>Engineered a robust backend system using Node.js, integrating with a MongoDB database to manage dynamic scheduling and customer data, significantly increasing booked meetings and resource allocation efficiency.</li>
+                    <li>Implemented text-to-speech (TTS) and speech-to-text (STT) technologies to provide natural and interactive voice responses, enhancing the user’s conversational experience.</li>
+                    <li>Reduced API latency by 20% and increased data throughput by optimizing endpoint code and architecture.</li>
+                    <li>Improved system performance and reliability by conducting code reviews and implementing optimizations in high-demand environments.</li>
+                </ul>
+            </div>
+            <div class="experience-box">
+                <h3>Systems Limited - Cloud Engineering Intern</h3>
+                <img src="images/systems-company-logo.png" alt="Company Logo" class="company-logo systems-logo">
+                <p class="experience-details"><em>June 2023 – August 2023 | Lahore, Pakistan</em></p>
+                <ul>
+                    <li>Reduced infrastructure provisioning time by 35% by deploying scalable AWS solutions with CloudFormation and Python.</li>
+                    <li>Enhanced system efficiency by 25% and cut operational costs by 20% by optimizing EC2 auto-scaling and Elastic Load Balancers.</li>
+                    <li>Decreased deployment time by 40% and reduced rollbacks by developing CI/CD pipelines using Jenkins and Terraform.</li>
+                    <li>Improved incident response efficiency by 30% by setting up AWS CloudWatch and Datadog for proactive system monitoring.</li>
+                    <li>Enhanced project transparency by preparing system documentation and delivering presentations on cloud optimizations to meet client needs.</li>
+                </ul>
+            </div>
+            <div class="experience-box">
+                <h3>Call Courier - Software Engineering Intern</h3>
+                <img src="images/callcourier-logo.png" alt="Company Logo" class="company-logo callcourier-logo">
+                <p class="experience-details"><em>May 2022 – August 2022 | Lahore, Pakistan</em></p>
+                <ul>
+                    <li>Optimized logistics operations by developing and deploying a scalable tracking feature, improving overall delivery efficiency.</li>
+                    <li>Improved system throughput by 20% to handle increased operational demands by engineering backend optimizations, utilizing Java and Spring Boot.</li>
+                    <li>Collaborated in an agile environment to implement automated testing frameworks, ensuring 99% reliability of critical software components under high load conditions.</li>
+                </ul>
+            </div>
+            <div class="experience-box">
+                <h3>Akhuwat - Data Science Intern</h3>
+                <img src="images/akhuwat-logo.png" alt="Company Logo" class="company-logo akhuwat-logo">
+                <p class="experience-details"><em>June 2021 – August 2021 | Lahore, Pakistan</em></p>
+                <ul>
+                    <li>Increased resource allocation efficiency by 30% by developing and deploying machine learning models for predictive analytics.</li>
+                    <li>Improved program outcomes by engineering automated data pipelines using Python and R, which ensured data integrity and generated actionable insights.</li>
+                </ul>
+            </div>
+            <div class="experience-box">
+                <h3>Peekaboo Guru - Backend Intern</h3>
+                <img src="images/peekaboo-guru-logo.png" alt="Company Logo" class="company-logo peekaboo-logo">
+                <p class="experience-details"><em>July 2019 – August 2019 | Karachi, Pakistan</em></p>
+                <ul>
+                    <li>Developed basic backend features using Python and MySQL.</li>
+                    <li>Gained hands-on experience with backend systems, marking my first experience in backend development.</li>
+                </ul>
+            </div>
+            <div class="experience-box">
+                <h3>The Citizen's Foundation - Volunteer</h3>
+                <img src="images/tcf-logo.png" alt="Organization Logo" class="company-logo tcf-logo">
+                <p class="experience-details"><em>July 2018 – August 2018 | Karachi, Pakistan</em></p>
+                <ul>
+                    <li>Managed events, including taking and selecting photos.</li>
+                    <li>Visited underprivileged students in schools to hand out stipends.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="projects">
+        <h2 class="projects-headline">Projects</h2> <!-- Centered headline -->
+        <div class="projects-container">
+            <div class="project-box">
+                <h3>MarketMind</h3>
+                <img src="images/marketmind-demo.png" alt="MarketMind Screenshot" class="project-image">
+                <p class="project-description">
+                    MarketMind is an iOS application that provides insights into stock performance and sentiment analysis, leveraging real-time financial data from Finnhub and Alpha Vantage.
+                    <ul>
+                        <li>Real-time stock prices and sentiment analysis.</li>
+                        <li>Integration with Finnhub and Alpha Vantage APIs.</li>
+                        <li>Real-time financial news related to stocks.</li>
+                    </ul>
+                </p>
+                <a href="https://github.com/muhammadshah0815/MarketMind" class="project-link">Source Code</a>
+            </div>
+            <div class="project-box">
+                <h3>Chess Engine</h3>
+                <img src="images/chess-demo.png" alt="Chess Engine Screenshot" class="project-image">
+                <p class="project-description">
+                    This project is a simple yet functional React-based implementation of a chess game. It features a responsive UI, draggable pieces, and handles the complex rules of chess, including pawn promotion, en passant, castling, and checkmate detection.
+                    <ul>
+                        <li>Dynamic Chess Board with visual representation.</li>
+                        <li>Draggable pieces and move validation.</li>
+                        <li>Turn-based gameplay with state management.</li>
+                    </ul>
+                </p>
+                <a href="https://github.com/muhammadshah0815/chessnew" class="project-link">Source Code</a>
+            </div>
+            <div class="project-box">
+                <h3>Bingo Game</h3>
+                <img src="images/bingo-demo.png" alt="Bingo Game Screenshot" class="project-image bingo-image">
+                <p class="project-description">
+                    An online multiplayer bingo game developed using WebSockets for real-time interaction, with a sleek and responsive UI (Still in development).
+                    <ul>
+                        <li>Real-time multiplayer functionality using WebSockets.</li>
+                        <li>Sleek and responsive user interface.</li>
+                        <li>Automated game logic and win detection.</li>
+                    </ul>
+                </p>
+                <a href="https://github.com/muhammadshah0815/bingo" class="project-link">Source Code</a>
+            </div>
+            
+            <div class="project-box">
+                <h3>News Sentiment Trader</h3>
+                <img src="images/sentiment-demo.png" alt="Sentiment Bot Screenshot" class="project-image">
+                <p class="project-description">
+                    A trading bot that uses sentiment analysis on news articles to make trading decisions. It integrates with financial APIs to fetch news and stock data, analyzing sentiment to predict market movements (Still in development).
+                    <ul>
+                        <li>Sentiment analysis on news articles.</li>
+                        <li>Currently implementing Reddit scraping, specifically for r/wallstreetbets</li>
+                        <li>Integration with financial APIs for real-time data.</li>
+                    </ul>
+                </p>
+                <a href="https://github.com/muhammadshah0815/news-sentiment-trader" class="project-link">Source Code</a>
+            </div>
+
+            <div class="project-box">
+                <h3>Pacman Q-Learning</h3>
+                <img src="images/pacman-qlearning-demo.png" alt="Pacman Q-Learning Screenshot" class="project-image">
+                <p class="project-description">
+                    This project involved implementing Q-learning and value iteration to train an AI agent to play Pacman. The agent learned optimal policies through trial and error, applying reinforcement learning techniques to improve its gameplay over time.
+                    <ul>
+                        <li>Implemented Q-learning and value iteration algorithms.</li>
+                        <li>Trained Pacman to navigate mazes and avoid ghosts using learned policies.</li>
+                        <li>Applied reinforcement learning concepts to improve AI decision-making.</li>
+                    </ul>
+                </p>
+                <a href="https://github.com/muhammadshah0815/reinforcement" class="project-link">Source Code</a>
+            </div>
+
+            <div class="project-box">
+                <h3>Autocomplete Algorithm</h3>
+                <img src="images/autocomplete-demo.png" alt="Autocomplete Project Screenshot" class="project-image">
+                <p class="project-description">
+                    Developed an efficient autocomplete algorithm using binary search and hash maps. The project involved creating multiple implementations of the autocomplete functionality, focusing on performance and accuracy.
+                    <ul>
+                        <li>Implemented binary search-based autocomplete with optimized performance.</li>
+                        <li>Created a hash map-based autocomplete for faster lookup times.</li>
+                        <li>Benchmarked and analyzed the performance of different implementations.</li>
+                    </ul>
+                </p>
+                <a href="https://github.com/muhammadshah0815/autocomplete" class="project-link">Source Code</a>
+            </div>
+
+        </div>
+        <h2 class="publications-headline">My Publications</h2>
+    <div class="publication-box">
+        <h3>
+            <a href="https://drive.google.com/drive/folders/1HXD3IPsiaV3XWT3g8HzcjhxVGAaNV7g3" class="publication-link" target="_blank">
+                Institutionalized Islamization: How the understanding of Theology is diluted from the lens of Islam
+            </a>
+        </h3>
+        <p class="publication-description">
+            The paper consists of research for how Islam was used to create “spaces”, which was used against minority groups; how Islam was used politically to satisfy a small selective group’s personal agenda; how Islam was historically used to advance certain views, usually against a group. The paper also implies possible ways to “reclaim” Islam, giving evidence of different modern interpretations of the Islamic scriptures, such as a feminist interpretation.
+        </p>
+    </div>
+    </section>
+    
+
+    
+
+
+    <section id="skills">
+        <h2 class="skills-headline">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" class="skill-logo">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" class="skill-logo">
+                <span>Python</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo" class="skill-logo">
+                <span>Java</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://img.icons8.com/?size=100&id=24465&format=png&color=000000" alt="Swift Logo" class="skill-logo">
+                <span>Swift</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="SQL Logo" class="skill-logo">
+                <span>SQL</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" alt="R Logo" class="skill-logo">
+                <span>R</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Logo" class="skill-logo">
+                <span>C++</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git Logo" class="skill-logo">
+                <span>Git</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://img.icons8.com/?size=100&id=cdYUlRaag9G9&format=png&color=000000" alt="Docker Logo" class="skill-logo">
+                <span>Docker</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Jenkins_logo.svg" alt="Jenkins Logo" class="skill-logo">
+                <span>Jenkins</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo" class="skill-logo">
+                <span>React</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo" class="skill-logo">
+                <span>Node.js</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://img.icons8.com/?size=100&id=MHcMYTljfKOr&format=png&color=000000" alt="Flask Logo" class="skill-logo">
+                <span>Flask</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg" alt="Spring Boot Logo" class="skill-logo">
+                <span>Spring Boot</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" class="skill-logo">
+                <span>AWS</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://img.icons8.com/?size=100&id=WHRLQdbEXQ16&format=png&color=000000" alt="GCP Logo" class="skill-logo">
+                <span>Google Cloud</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="MongoDB Logo" class="skill-logo">
+                <span>MongoDB</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://www.svgrepo.com/show/375425/dialogflow-cx.svg" alt="Dialogflow CX Logo" class="skill-logo">
+                <span>Dialogflow CX</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" alt="Pandas Logo" class="skill-logo">
+                <span>Pandas</span>
+            </div>
+            <div class="skill-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn Logo" class="skill-logo">
+                <span>Scikit-learn</span>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="about">
+        <h2 class="about-headline">About Me</h2>
+        <div class="about-grid-custom">
+            <div class="about-photo-quote">
+                <img src="images/superman-shah-early-childhood.jpg" alt="Early childhood photo of Muhammad Ali Shah" class="about-photo">
+            </div>
+            <div class="about-info">
+                <div class="about-card">
+                    <p>I’m a junior at Duke, doing a B.S. dual-major in Computer Science and Statistics, and I hail from Pakistan. I’m deeply immersed in the world of technology, working on diverse projects that blend my interests in software engineering, data science, and artificial intelligence.</p>
+                    <p>In my sophomore year of high school, I got involved with religious debate surrounding sectarian violence, after being subject to sectarian hate in earlier years. I ended up applying to Duke as a Religious Studies major, but after trying my hand at Computer Science, I realized that my problem solving and analytical skills could make a far greater impact using code.</p>
+                    <p>Through my diverse journey, I have been able to succeed in non-traditional routes due to my ability to easily pick up new skills, acquire leadership roles while in school, willingness to collaborate with coworkers, and ability to clearly communicate and breakdown complex projects that I work on.</p>
+                    <p>I was born in Chakwal, Pakistan, and <span class="highlight-text">come from a village called Chohan</span>, found in the rural outskirts of Chakwal, but moved to Lahore in 2009 and have been living here since.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Popup Image Section -->
+    <div id="popup" class="popup">
+        <span class="close">&times;</span>
+        <img class="popup-content" id="popup-img" src="images/chohan-village-shot.jpg">
+    </div>
+    
+    
+
+
+
+
+    
+    
+    
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Contact</h3>
+        <ul class="contact-list">
+            <li>
+                muhammad.shah@duke.edu
+                <button class="copy-button" onclick="copyToClipboard('muhammad.shah@duke.edu')">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Gnome-edit-copy.svg" alt="Copy Icon">
+                </button>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1U5Vh3-FF70l26gHytRPwT-Z2fgD9ThO5/view?usp=sharing" class="footer-link" target="_blank">Resume</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/muhammadshah18012" class="footer-link" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+                <a href="https://github.com/muhammadshah0815" class="footer-link" target="_blank">GitHub</a>
+            </li>
+        </ul>
+    </footer>
+    
+
+
+    <div class="about-quote-bubble">
+        <p class="about-quote">"To quote from Whitman, "O me! O life!... of the questions of these recurring; of the endless trains of the faithless... of cities filled with the foolish; what good amid these, O me, O life?" Answer. That you are here - that life exists, and identity; that the powerful play goes on and you may contribute a verse. That the powerful play *goes on* and you may contribute a verse. <span class="impactful-line">What will your verse be?</span>"</p>
+        <p class="quote-author">— John Keating, Dead Poets Society</p>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,728 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-image: url('images/770694.jpg'); /* Background image for the entire body */
+    background-size: cover; /* Cover the entire body */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+section {
+    position: relative; /* Required for the overlay to work */
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* White overlay with 70% opacity */
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+    min-height: 100vh; /* Home section retains full-screen layout */
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+section:not(#home) {
+    min-height: 50vh; /* Other sections have smaller minimum height */
+}
+
+header {
+    background: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 33px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.profile-image {
+    width: 250px; /* Adjusted size */
+    height: 250px; /* Adjusted size */
+    object-fit: cover; /* Ensures the image is cropped to fit */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.urdu-name {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.5em;
+    margin: 0;
+    color: #555;
+}
+
+h2, h3 {
+    font-family: 'DM Serif Display', serif;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.buttons button:hover {
+    background: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 35px;
+    height: 35px;
+}
+
+.tagline {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.2em; /* Slightly smaller than h3 */
+    font-weight: normal; /* Makes the text lighter */
+    margin-top: 10px;
+    color: #333; /* Adjust color if needed */
+}
+
+.experience-headline {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.experience-wrapper {
+    display: flex;
+    justify-content: center; /* Center the container within the wrapper */
+    width: 100%;
+}
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space between the boxes */
+    margin-top: 30px;
+    gap: 20px; /* Add consistent spacing between the boxes */
+}
+
+.experience-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 52px);
+    padding: 20px;
+    text-align: left;
+    position: relative; /* Set relative positioning for the logo */
+    transition: all 0.2s ease-in-out;
+}
+
+.experience-box:hover {
+    transform: translateY(-5px); /* Slightly elevate the box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow */
+}
+
+.company-logo {
+    position: absolute;
+}
+
+.tenpearls-logo {
+    object-fit: cover;
+    width: 60px; /* Specific size for 10Pearls logo */
+    height: 60px;
+    top: 10px; /* Adjusted position */
+    right: 10px;
+    border-radius: 50%; /* Circular logo */
+}
+
+.systems-logo {
+    object-fit:contain;
+    width: 95px; /* Specific width for Systems logo */
+    height: 40px; /* Specific height for Systems logo */
+    top: 18px; /* Adjusted position */
+    right: 15px;
+}
+
+.callcourier-logo {
+    object-fit:contain;
+    width: 90px; /* Specific width for Systems logo */
+    height: 60px; /* Specific height for Systems logo */
+    top: 15px; /* Adjusted position */
+    right: 15px;
+}
+
+.akhuwat-logo{
+    object-fit:contain;
+    width: 90px; /* Specific width for Systems logo */
+    height: 60px; /* Specific height for Systems logo */
+    top: 15px; /* Adjusted position */
+    right: 0px;
+}
+
+.peekaboo-logo {
+    object-fit: contain;
+    width: 50px; /* Specific size for Peekaboo Guru logo */
+    height: 50px;
+    top: 15px;
+    right: 15px;
+}
+
+.tcf-logo {
+    object-fit: contain;
+    width: 90px; /* Specific size for The Citizen's Foundation logo */
+    height: 60px;
+    top: 15px;
+    right: 15px;
+}
+
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Adds space between header and date */
+}
+
+.experience-box h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5em;
+    margin: 0; /* Remove bottom margin */
+    color: #333;
+    display: inline-block;
+}
+
+.experience-details {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: center; /* Center the location/months text */
+}
+
+.experience-box ul {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    padding-left: 20px; /* Add padding for bullet points */
+}
+
+.projects-headline {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space between the boxes */
+    margin-top: 30px;
+    gap: 20px; /* Add consistent spacing between the boxes */
+}
+
+.project-box:hover {
+    transform: translateY(-5px); /* Slightly elevate the box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the shadow */
+}
+
+.project-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 52px);
+    padding: 20px;
+    text-align: left; /* Center the text in the project box */
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+.project-box h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.project-description {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left; /* Align description text to the left */
+    align-items: flex-start;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 20px 0; /* Add spacing around the image */
+    border-radius: 10px; /* Optional: rounded corners for the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.project-link {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1em;
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.project-link:hover {
+    text-decoration:underline; /* Add underline on hover */
+}
+
+.project-box .bingo-image {
+    width: 70%; /* Adjust this percentage to make the image smaller or larger */
+    height: auto;
+    margin: 0 auto 20px auto; /* Center the image and add space below it */
+    display: block; /* Ensure the image is treated as a block element */
+    border-radius: 10px; /* Optional: Keep the corners rounded */
+}
+
+
+.publications-headline {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.4em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.publication-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 0.9em;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-in-out; /* Smooth transition */
+}
+
+.publication-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Elevate the box on hover */
+}
+
+.publication-box h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.publication-link {
+    text-decoration: none;
+    color: inherit; /* Inherit the color from the h3 */
+}
+
+.publication-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.publication-description {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+
+.skills-headline {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.skill-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.skill-box span {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1em;
+    color: #333;
+    display: block;
+}
+
+.contact-headline {
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjust the gap between contact boxes */
+}
+
+.contact-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    width: 220px; /* Fixed width to ensure consistency */
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.contact-link span {
+    margin-top: 10px;
+    display: block;
+}
+
+.highlight-text {
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #333;
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1001; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+}
+
+.popup-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.about-headline {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em; /* Updated to match other sections */
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Consistent color with the rest of the site */
+}
+
+.about-grid-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Decreased gap between the image and text */
+    margin-top: 20px;
+}
+
+.about-photo-quote {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 400px; /* Ensures the image does not become too large */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px;
+}
+
+.about-info {
+    flex: 1.5;
+    background-color: rgba(255, 255, 255, 0.997); /* White bubble background */
+    margin-left: -70px;
+    margin-right: 80px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-card {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.about-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-card p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.urdu-text {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.about-quote-bubble {
+    background-color: rgb(205, 184, 160); /* Light brown background */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 0; /* Align with the footer, no extra top margin */
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0; /* Remove rounded corners */
+    text-align: left;
+}
+
+.about-quote {
+    font-family: Magneta, serif;
+    font-style: italic;
+    font-size: 1.05em;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.about-quote .impactful-line {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.quote-author {
+    font-family: Magneta, serif;
+    font-style: italic;
+    font-size: 1.05em;
+    color: #555;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+
+footer {
+    background-color: #333; /* Light blue background color */
+    padding: 20px;
+    text-align: left;
+}
+
+footer h3 {
+    margin-top: -2px;
+    font-family: 'DM Serif Display', serif;
+    color: #ffffff;
+    font-size: 2em;
+}
+
+footer ul.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul.contact-list li {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #ffffff;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 25px; /* Space for the custom bullet */
+}
+
+footer ul.contact-list li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff; /* White border for the hollow effect */
+    border-radius: 50%; /* Circular bullet */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.copy-button {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.copy-button img {
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+}
+
+/* Style for the "Copied!" message */
+.copied-message {
+    margin-left: 10px;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.9em;
+    background-color: #f0f0f0; /* Lighter gray background color */
+    padding: 3px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    opacity: 0.9;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: text-decoration 0.3s ease;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Urdu font style for a cultural touch */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+
+.urdu-text {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    font-size: 1.2em;
+    color: #555;
+}
